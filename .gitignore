@@ -94,3 +94,15 @@ crashlytics-build.properties
 *.a
 *.dll
 *.exe
+
+# Forzar LF en archivos de Unity y evitar conversión automática
+*.asset text eol=lf
+*.prefab text eol=lf
+*.unity text eol=lf
+*.meta text eol=lf
+*.cs text eol=lf
+
+# Archivos binarios (no modificar)
+*.png binary
+*.fbx binary
+*.wav binary
