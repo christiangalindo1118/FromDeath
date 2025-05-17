@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Estanteriavacia_0: 5286252305482198569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

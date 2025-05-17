@@ -1,14 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
-
 
 public class LevelExit : MonoBehaviour
 {
-    [Header("Configuración")]
+    [Header("Configuration")]
     [SerializeField] private string nextLevel = "Level2";
     [SerializeField] private float transitionDelay = 1f;
-    [SerializeField] private AudioClip transitionSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,15 +16,8 @@ public class LevelExit : MonoBehaviour
 
     private IEnumerator LoadNextLevel()
     {
-        // Reproducir sonido de transición
-        if(transitionSound != null)
-            AudioSource.PlayClipAtPoint(transitionSound, transform.position);
-
-        // Esperar el tiempo de transición
         yield return new WaitForSeconds(transitionDelay);
-
-        // Cargar escena con transición
-        TransitionManager.Instance.LoadSceneWithFade(nextLevel);
+        GameManager.Instance.LoadSceneWithFade(nextLevel);
     }
 
     #if UNITY_EDITOR
