@@ -1,36 +1,77 @@
 using UnityEngine;
+using System.Collections;
 
 public class BreakablePlatform : MonoBehaviour
 {
-    [SerializeField] private float breakDelay = 0.5f; // Tiempo antes de romperse
-    [SerializeField] private Sprite brokenSprite; // Sprite de la plataforma rota
-    [SerializeField] private GameObject debrisParticles; // Efecto visual opcional
+    [Header("Configuración")]
+    [SerializeField] private float shakeDuration = 1f;
+    [SerializeField] private float shakeIntensity = 0.1f;
+    [SerializeField] private float destroyDelay = 2f;
 
-    private SpriteRenderer _spriteRenderer;
-    private BoxCollider2D _collider;
+    [Header("Referencias")]
+    [SerializeField] private GameObject breakParticlesPrefab;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
-    void Start()
+    private Rigidbody2D rb;
+    private Vector3 initialPosition;
+    private bool isShaking = false;
+
+    private void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _collider = GetComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic; // Configuración correcta del Body Type
+        }
+        initialPosition = transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !isShaking)
         {
-            Invoke(nameof(BreakPlatform), breakDelay);
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y < -0.5f)
+                {
+                    StartCoroutine(ShakeAndFall());
+                    break;
+                }
+            }
         }
     }
 
-    private void BreakPlatform()
+    private IEnumerator ShakeAndFall()
     {
-        _spriteRenderer.sprite = brokenSprite; // Cambia el sprite
-        _collider.enabled = false; // Desactiva la colisión
+        isShaking = true;
+        float elapsed = 0f;
 
-        if (debrisParticles != null)
+        // Fase de temblor
+        while (elapsed < shakeDuration)
         {
-            Instantiate(debrisParticles, transform.position, Quaternion.identity);
+            transform.position = initialPosition + new Vector3(
+                Random.Range(-shakeIntensity, shakeIntensity),
+                Random.Range(-shakeIntensity, shakeIntensity),
+                0
+            );
+            elapsed += Time.deltaTime;
+            yield return null;
         }
+
+        transform.position = initialPosition;
+
+        // Activar física
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic; // Cambio correcto a cuerpo dinámico
+        }
+
+        // Instanciar partículas
+        if (breakParticlesPrefab != null)
+        {
+            Instantiate(breakParticlesPrefab, transform.position, Quaternion.identity);
+        }
+
+        Destroy(gameObject, destroyDelay);
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9d974566bc617cb4ea2757f889e0b95f
+guid: 1c15afa96e96a3645a11da31d411897d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -537727820953543772
-    second: Fondo_Nivel1_0
+      213: 6147356629719877758
+    second: BreakPlatformPixelgamejam_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo_Nivel1_0
+      name: BreakPlatformPixelgamejam_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab1836556b9988f0800000000000000
-      internalID: -537727820953543772
+      spriteID: e78881ed84ccf4550800000000000000
+      internalID: 6147356629719877758
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fondo_Nivel1_0: -537727820953543772
+      BreakPlatformPixelgamejam_0: 6147356629719877758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
