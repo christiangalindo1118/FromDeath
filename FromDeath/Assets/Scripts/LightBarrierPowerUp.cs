@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class LightBarrierPowerUp : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Config")]
+    [SerializeField] private GameObject pickupEffect; // Efecto al recolectar (partículas, sonido, etc.)
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.UnlockLightBarrier(); // Desbloquea la habilidad
+                if (pickupEffect != null)
+                {
+                    Instantiate(pickupEffect, transform.position, Quaternion.identity);
+                }
+                Destroy(gameObject); // Destruye el power-up
+            }
+        }
     }
 }
