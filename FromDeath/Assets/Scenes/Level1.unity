@@ -74699,7 +74699,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: Level2
   transitionDelay: 1
-  transitionSound: {fileID: 8300000, guid: c155d28530cb6044e85bc947280d05e6, type: 3}
 --- !u!61 &1572395556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88343,6 +88342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningText: {fileID: 2074534457}
+  fadeAnimator: {fileID: 0}
+  fadeDuration: 1
+  transitionSound: {fileID: 0}
 --- !u!4 &1906459712
 Transform:
   m_ObjectHideFlags: 0
