@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
         CheckGround();
         HandleJump();
         FlipSprite();
+        
     }
 
     void FixedUpdate() => HandleMovement();

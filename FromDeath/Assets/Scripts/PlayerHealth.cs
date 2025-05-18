@@ -46,8 +46,13 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("[DAMAGE] Took " + damage + " damage | Remaining: " + currentHealth);
         #endif
 
-        StartCoroutine(InvincibilityFrames());
-        CheckRespawn();
+        // Solo activar invencibilidad si sigue vivo
+        if (currentHealth > 0)
+        {
+            StartCoroutine(InvincibilityFrames());
+        }
+        
+        CheckGameOver();
     }
 
     private IEnumerator InvincibilityFrames()
@@ -58,27 +63,26 @@ public class PlayerHealth : MonoBehaviour
     }
     #endregion
 
-    #region Respawn System
+    #region Game Over Integration
     public void ForceDeath()
     {
         currentHealth = 0;
-        Respawn();
+        CheckGameOver();
     }
 
-    private void CheckRespawn()
+    private void CheckGameOver()
     {
         if (currentHealth > 0) return;
-        Respawn();
-    }
-
-    private void Respawn()
-    {
-        transform.position = checkpointPosition;
-        currentHealth = maxHealth;
         
-        #if UNITY_EDITOR
-        Debug.LogWarning("[RESPAWN] Player respawned at checkpoint");
-        #endif
+        // Notificar al GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.TriggerGameOver();
+        }
+        else
+        {
+            Debug.LogError("GameManager no encontrado!");
+        }
     }
     #endregion
 
