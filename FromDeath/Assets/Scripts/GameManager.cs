@@ -5,64 +5,47 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton
     public static GameManager Instance;
-
-    [Header("UI Configuration")]
-    [SerializeField] private Text warningText;
-    [SerializeField] private Animator fadeAnimator;
-
-    [Header("Scene Transition Settings")]
-    [SerializeField] private float fadeDuration = 1f;
-    [SerializeField] private AudioClip transitionSound;
-
-    private AudioSource audioSource;
-
-    void Awake()
+    private void Awake() => InitializeSingleton();
+    
+    private void InitializeSingleton()
     {
-        ManageSingleton();
-        InitializeComponents();
-    }
-
-    void ManageSingleton()
-    {
-        if (Instance != null)
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
-            return;
-        }
-        
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
-
-    void InitializeComponents()
-    {
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-
-        if (fadeAnimator != null)
-        {
-            fadeAnimator.gameObject.SetActive(true);
         }
     }
+    #endregion
 
-    public void ShowWarning(string message)
+    #region Scene Management
+    [Header("Scene Configuration")]
+    [SerializeField] private string[] levelNames = { "Opening", "Level1", "Level2", "Level3", "Ending" };
+    
+    [Header("Scene Transitions")]
+    [SerializeField] private Animator fadeAnimator;
+    [SerializeField] private float fadeDuration = 1f;
+
+    public void LoadNextLevel()
     {
-        if (warningText != null)
-        {
-            warningText.text = message;
-            warningText.gameObject.SetActive(true);
-        }
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndex < levelNames.Length - 1 ? currentIndex + 1 : 0);
     }
 
-    public void HideWarning()
+    public void LoadSceneByName(string sceneName)
     {
-        if (warningText != null)
+        if (System.Array.Exists(levelNames, name => name == sceneName))
         {
-            warningText.gameObject.SetActive(false);
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            Debug.LogError($"Scene {sceneName} not registered in levelNames array");
         }
     }
 
@@ -73,33 +56,79 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator TransitionRoutine(string sceneName)
     {
-        PlayTransitionSound();
-        
         if (fadeAnimator != null)
         {
             fadeAnimator.SetTrigger("FadeOut");
             yield return new WaitForSeconds(fadeDuration);
         }
-        
+
         SceneManager.LoadScene(sceneName);
-        
+
         if (fadeAnimator != null)
         {
             fadeAnimator.SetTrigger("FadeIn");
         }
     }
+    #endregion
 
-    private void PlayTransitionSound()
+    #region Pause System
+    [Header("Pause Configuration")]
+    [SerializeField] private KeyCode pauseKey = KeyCode.P;
+    [SerializeField] private GameObject pauseMenu;
+
+    private void Update() => CheckPauseInput();
+
+    private void CheckPauseInput()
     {
-        if (transitionSound != null && audioSource != null)
+        if (Input.GetKeyDown(pauseKey))
         {
-            audioSource.PlayOneShot(transitionSound);
+            TogglePause();
         }
     }
 
-    // Método para cargar escenas directamente
-    public void LoadScene(string sceneName)
+    public void TogglePause()
     {
-        SceneManager.LoadScene(sceneName);
+        Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+        if (pauseMenu) pauseMenu.SetActive(!pauseMenu.activeSelf);
     }
+    #endregion
+
+    #region Game Flow
+    [Header("Game Over Configuration")]
+    [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private float gameOverDelay = 1.5f;
+
+    public void TriggerGameOver()
+    {
+        StartCoroutine(ShowGameOverScreen());
+    }
+
+    private IEnumerator ShowGameOverScreen()
+    {
+        yield return new WaitForSeconds(gameOverDelay);
+        if (gameOverScreen) gameOverScreen.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    #endregion
+
+    #region Button Actions
+    // Panel de Pausa
+    public void ResumeGame() => TogglePause();
+    public void RestartLevel() => RestartGame();
+    public void QuitToMainMenu() => LoadSceneByName("Opening");
+
+    // Panel Game Over
+    public void RetryLevel() => RestartGame();
+    public void MainMenu() => LoadSceneByName("Opening");
+    #endregion
+
+    #region Player Events
+    public void OnPlayerDeath() => TriggerGameOver();
+    #endregion
 }
