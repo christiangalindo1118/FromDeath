@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Checkpoint
   - Enemy
+  - FadeAnimator
+  - PauseMenu
+  - GameOver
+  - OptionsMenu
+  - MainMenu
+  - GameOverScreen
+  - MainMenuPanel
+  - GameOverPanel
   layers:
   - Default
   - TransparentFX

@@ -97,13 +97,12 @@ public class DarkZoneController : MonoBehaviour
 
     private void CheckImmediateDeath()
     {
-        if (Time.time >= nextDeathCheckTime && playerHealth != null)
+        if (playerHealth == null) return;
+
+        if (playerHealth.CurrentHealth <= 0 && Time.time >= nextDeathCheckTime)
         {
-            if (playerHealth.CurrentHealth <= 0)
-            {
-                Debug.LogWarning("¡Jugador MUERTO en zona oscura!");
-                playerHealth.ForceDeath();
-            }
+            Debug.LogWarning("¡Jugador MUERTO en zona oscura!");
+            //playerHealth.ForceDeath();
             nextDeathCheckTime = Time.time + deathCheckInterval;
         }
     }
@@ -111,12 +110,14 @@ public class DarkZoneController : MonoBehaviour
     private void ApplyDamage()
     {
         if (playerHealth == null) return;
-        
+    
         playerHealth.TakeDamage(darknessDamage);
-        if (debugMode) Debug.Log($"Daño aplicado: {darknessDamage}");
-        
-        if (debugMode && playerHealth.CurrentHealth <= 0)
-            Debug.LogWarning("¡Vida del jugador llegó a cero!");
+    
+        if (debugMode)
+        {
+            Debug.Log($"Daño aplicado: {darknessDamage}");
+            Debug.Log($"Vida restante: {playerHealth.CurrentHealth}");
+        }
     }
     #endregion
 

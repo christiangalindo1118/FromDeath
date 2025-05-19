@@ -12,22 +12,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheck; 
     [SerializeField] private float groundCheckRadius = 0.2f;
 
-    [Header("Light Barrier")]
-    public bool HasLightBarrier { get; private set; }
-    private Coroutine barrierCoroutine;
-
-    [SerializeField] private GameObject lightBarrierVFX; // Efecto visual de la barrera
+    [Header("Light Barrier System")]
+    [SerializeField] private GameObject barrierEffectPrefab; // Prefab con VFX + Luz
     [SerializeField] private float barrierDuration = 10f;
+    [SerializeField] private Light barrierLight; // Luz integrada
     
+
     private Rigidbody2D rb;
     private bool isGrounded;
     private float horizontalInput;
+    private GameObject currentBarrier;
+    private Coroutine activeBarrierCoroutine;
+    public bool HasLightBarrier { get; private set; }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (lightBarrierVFX != null)
-            lightBarrierVFX.SetActive(false); // Asegurar que empiece desactivado
+        InitializeBarrier();
     }
 
     void Update()
@@ -36,21 +37,50 @@ public class PlayerController : MonoBehaviour
         CheckGround();
         HandleJump();
         FlipSprite();
-        
     }
 
     void FixedUpdate() => HandleMovement();
 
-    public void UnlockLightBarrier()
+    #region Sistema de Barrera Luminosa
+     public void ActivateLightBarrier(GameObject barrierInstance, float duration)
     {
-        HasLightBarrier = true;
-        if (lightBarrierVFX != null)
-            lightBarrierVFX.SetActive(true); // Activar efecto visual
-        
-        Debug.Log("¡Light Barrier activada!");
-        // Aquí podrías añadir también un sonido: AudioSource.PlayClipAtPoint(...)
+        if (currentBarrier != null)
+            Destroy(currentBarrier);
+
+        currentBarrier = barrierInstance;
+
+        if (duration > 0)
+            Destroy(currentBarrier, duration);
     }
 
+    private IEnumerator DeactivateBarrierAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(currentBarrier);
+        currentBarrier = null;
+        
+    }
+
+    private IEnumerator BarrierCountdown()
+    {
+        yield return new WaitForSeconds(barrierDuration);
+        DeactivateLightBarrier();
+    }
+
+    private void DeactivateLightBarrier()
+    {
+        HasLightBarrier = false;
+        Destroy(currentBarrier);
+        if (barrierLight != null) barrierLight.enabled = false;
+    }
+
+    private void InitializeBarrier()
+    {
+        if (barrierLight != null) barrierLight.enabled = false;
+    }
+    #endregion
+
+    #region Movimiento Básico
     private void HandleInput() => horizontalInput = Input.GetAxisRaw("Horizontal");
 
     private void CheckGround() => 
@@ -70,39 +100,13 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement() => 
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+    #endregion
 
+    #region Debug
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
-
-    
-
-    private IEnumerator ActivateBarrier()
-    {
-        HasLightBarrier = true;
-        
-        if (lightBarrierVFX != null)
-        {
-            lightBarrierVFX.SetActive(true);
-            Debug.Log("Barrera luminosa ACTIVADA");
-        }
-        
-        yield return new WaitForSeconds(barrierDuration);
-        
-        DeactivateBarrier();
-    }
-
-    private void DeactivateBarrier()
-    {
-        HasLightBarrier = false;
-        
-        if (lightBarrierVFX != null)
-        {
-            lightBarrierVFX.SetActive(false);
-            Debug.Log("Barrera luminosa DESACTIVADA");
-        }
-    }
-    
+    #endregion
 }

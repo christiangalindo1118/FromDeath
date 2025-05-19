@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Amuleto_0: 8506025638569302119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
