@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -103,7 +103,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -132,7 +132,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -626,7 +626,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -635,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Titulo1_0: -5078909338390388996
+      Titulo1_1: 4927670023001644272
+      Titulo1_10: -7793727647387156288
+      Titulo1_11: -193712355159514454
+      Titulo1_12: -8412540459689532960
+      Titulo1_13: -5633320149968787291
+      Titulo1_14: -2207340890697617173
+      Titulo1_15: 632650470471722597
+      Titulo1_16: -934655423849087829
+      Titulo1_17: 1944461690323635205
+      Titulo1_18: -8641353158723465684
+      Titulo1_19: 513403089898649467
+      Titulo1_2: -3567091347286194366
+      Titulo1_3: 1003794670762568204
+      Titulo1_4: -1025439753758339772
+      Titulo1_5: -1401148000502886286
+      Titulo1_6: 9079676779564633335
+      Titulo1_7: -834353019848231752
+      Titulo1_8: 3395029566380237811
+      Titulo1_9: 6733224554007371295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

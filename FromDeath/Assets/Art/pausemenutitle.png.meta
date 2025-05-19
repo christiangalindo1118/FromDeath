@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf6d5fadc6d062342862f7eb0d2d40a7
+guid: c3c5a0d680d18364682f191897e2478d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7885967544079711306
-    second: uibarravidar_0
+      213: 5791456811058223046
+    second: pausemenutitle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uibarravidar_0
+      name: pausemenutitle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 23
-        width: 118
-        height: 19
+        x: 64
+        y: 63
+        width: 372
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b38ed0ec4a6f8290800000000000000
-      internalID: -7885967544079711306
+      spriteID: 6c7542309436f5050800000000000000
+      internalID: 5791456811058223046
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      uibarravidar_0: -7885967544079711306
+      pausemenutitle_0: 5791456811058223046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
