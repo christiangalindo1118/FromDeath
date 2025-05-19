@@ -12,6 +12,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private bool showDetectionGizmo = true;
 
+    [Header("Visual Settings")]
+    [SerializeField] private bool flipSprite = true; // Activar/desactivar volteo de sprite
+    private SpriteRenderer spriteRenderer;
+
     private Transform player;
     private Rigidbody2D rb;
     private int currentHealth;
@@ -34,9 +38,11 @@ public class EnemyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Nueva línea
         
         if (!player) Debug.LogWarning("Player not found in scene!");
         if (!rb) Debug.LogError("Rigidbody2D component missing!");
+        if (flipSprite && !spriteRenderer) Debug.LogError("SpriteRenderer component missing!");
     }
 
     private void HandlePlayerDetection()
@@ -61,6 +67,8 @@ public class EnemyController : MonoBehaviour
         }
 
         rb.linearVelocity = new Vector2(directionToPlayer.x * moveSpeed, rb.linearVelocity.y);
+
+        FlipSprite();
     }
 
     public void TakeDamage(int damage)
@@ -99,6 +107,21 @@ public class EnemyController : MonoBehaviour
         {
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, detectionRange);
+        }
+    }
+
+    private void FlipSprite()
+    {
+        if (!flipSprite || !spriteRenderer) return;
+
+        // Voltear el sprite según la dirección del jugador
+        if (directionToPlayer.x > 0) // Jugador a la derecha
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (directionToPlayer.x < 0) // Jugador a la izquierda
+        {
+            spriteRenderer.flipX = true;
         }
     }
 }

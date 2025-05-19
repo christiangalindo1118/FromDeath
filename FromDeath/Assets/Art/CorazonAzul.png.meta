@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CorazonAzul_0: -571765311715761125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -50,9 +50,9 @@ MonoBehaviour:
   - Level2
   - Level3
   - Ending
-  fadeAnimator: {fileID: 0}
+  fadeAnimator: {fileID: 8093434229499493413, guid: 50b331a48f151884a8ed002e675a5583, type: 3}
   fadeDuration: 1
   pauseKey: 112
-  pauseMenu: {fileID: 0}
-  gameOverScreen: {fileID: 0}
+  pauseMenu: {fileID: 4748375830694179310, guid: a7bbb625142c3184986742ec48482577, type: 3}
+  gameOverScreen: {fileID: 1014745190306125375, guid: 15ea993f4f5aafc4d8c38f107a569d74, type: 3}
   gameOverDelay: 1.5
