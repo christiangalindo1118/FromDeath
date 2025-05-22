@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 63a845f9eeb1f1442a09a1ef5875ca4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3479870095110000785
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_0
+  - first:
+      213: 5900276222109895525
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_1
+  - first:
+      213: 5903267328255208026
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_2
+  - first:
+      213: 2450928786757954489
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_3
+  - first:
+      213: -3781792668053002625
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_4
+  - first:
+      213: -3274186540995608464
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_5
+  - first:
+      213: 7686786589639641578
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_6
+  - first:
+      213: 170144751817324981
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_7
+  - first:
+      213: -2418042480716692808
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_8
+  - first:
+      213: 3864177242331005033
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_9
+  - first:
+      213: 2531304544724057851
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_10
+  - first:
+      213: 794632611448388052
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_11
+  - first:
+      213: -8039068780926163313
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_12
+  - first:
+      213: 6412152875122948798
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_13
+  - first:
+      213: 3736728238532369750
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_14
+  - first:
+      213: 6988191709700486404
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_15
+  - first:
+      213: 8742783371289928972
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_16
+  - first:
+      213: 715023807550316179
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_17
+  - first:
+      213: -3807191009082617862
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_18
+  - first:
+      213: 1105086795203760138
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_19
+  - first:
+      213: -766005515706235284
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_20
+  - first:
+      213: 3386086630894183981
+    second: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 231
+        width: 180
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fa67ce59405bfc0800000000000000
+      internalID: -3479870095110000785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 232
+        width: 119
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b4b8786fdf1e150800000000000000
+      internalID: 5900276222109895525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 233
+        width: 192
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a22d2bb5e9ce150800000000000000
+      internalID: 5903267328255208026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 238
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbac78feb2730220800000000000000
+      internalID: 2450928786757954489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 111
+        width: 117
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76268eea9f548bc0800000000000000
+      internalID: -3781792668053002625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 42
+        width: 171
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070879730b0cf82d0800000000000000
+      internalID: -3274186540995608464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 193
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae905bb4da3fcaa60800000000000000
+      internalID: 7686786589639641578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 193
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9f77410c97c5200800000000000000
+      internalID: 170144751817324981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 180
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2c315dc23617ed0800000000000000
+      internalID: -2418042480716692808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 180
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960c9468ab050a530800000000000000
+      internalID: 3864177242331005033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 171
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfefb9e6210012320800000000000000
+      internalID: 2531304544724057851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 162
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d97254662a170b00800000000000000
+      internalID: 794632611448388052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 158
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86a6fb598d7f6090800000000000000
+      internalID: -8039068780926163313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 141
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaf33f111b8cf850800000000000000
+      internalID: 6412152875122948798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 141
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d94efe8868bd330800000000000000
+      internalID: 3736728238532369750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 145
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405f60fb55b0bf060800000000000000
+      internalID: 6988191709700486404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 132
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05ade9a72b945970800000000000000
+      internalID: 8742783371289928972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 120
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39edbf65d564ce900800000000000000
+      internalID: 715023807550316179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 123
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affc197d2f32a2bc0800000000000000
+      internalID: -3807191009082617862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 97
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a005812d59e065f00800000000000000
+      internalID: 1105086795203760138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 102
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66075cba0a9e55f0800000000000000
+      internalID: -766005515706235284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 97
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26a52db9dbcdfe20800000000000000
+      internalID: 3386086630894183981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_0: -3479870095110000785
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_1: 5900276222109895525
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_10: 2531304544724057851
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_11: 794632611448388052
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_12: -8039068780926163313
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_13: 6412152875122948798
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_14: 3736728238532369750
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_15: 6988191709700486404
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_16: 8742783371289928972
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_17: 715023807550316179
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_18: -3807191009082617862
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_19: 1105086795203760138
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_2: 5903267328255208026
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_20: -766005515706235284
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_21: 3386086630894183981
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_3: 2450928786757954489
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_4: -3781792668053002625
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_5: -3274186540995608464
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_6: 7686786589639641578
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_7: 170144751817324981
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_8: -2418042480716692808
+      1601.m00.i104.n011.P.c25.259592084_Pixel_art_smoke_animation_vector_frames_for_game_design-removebg-preview_9: 3864177242331005033
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
