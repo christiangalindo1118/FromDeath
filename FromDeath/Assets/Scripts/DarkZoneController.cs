@@ -5,13 +5,13 @@ public class DarkZoneController : MonoBehaviour
     [Header("Configuración Mortal")]
     [SerializeField] private GameObject warningUI;
     [SerializeField] private int darknessDamage = 1;
-<<<<<<< HEAD
+
     [SerializeField] private float damageInterval = 1f;
 
     private bool isPlayerInDarkness;
     private PlayerHealth playerHealth;
     private float nextDamageTime;
-=======
+
     [SerializeField] private float damageInterval = 1f; // Daño más frecuente
     [SerializeField] private float deathCheckInterval = 0.5f;
 
@@ -23,13 +23,13 @@ public class DarkZoneController : MonoBehaviour
     private PlayerController playerController;
     private float nextDamageTime;
     private float nextDeathCheckTime;
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
 
-<<<<<<< HEAD
+
         // Usamos el Player.Instance para acceder a sus componentes de forma centralizada.
         // Esto es más robusto que GetComponent.
         playerHealth = Player.Instance.Health;
@@ -39,7 +39,7 @@ public class DarkZoneController : MonoBehaviour
         {
             ActivateDarkZoneEffects();
         }
-=======
+
         LogEnterTrigger(other);
         CachePlayerComponents(other.gameObject);
         
@@ -49,27 +49,27 @@ public class DarkZoneController : MonoBehaviour
             ActivateDarkZone();
         else if (debugMode)
             Debug.Log("Jugador protegido por Light Barrier");
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         
-<<<<<<< HEAD
+
         DeactivateDarkZoneEffects();
         playerHealth = null; // Limpiamos la referencia al salir.
-=======
+
         LogExitTrigger();
         DeactivateDarkZone();
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     }
 
     private void Update()
     {
         if (!isPlayerInDarkness) return;
         
-<<<<<<< HEAD
+
         // Si el jugador activa la barrera MIENTRAS está dentro, lo detectamos.
         if (Player.Instance.LightBarrier.IsBarrierActive)
         {
@@ -77,7 +77,7 @@ public class DarkZoneController : MonoBehaviour
             return;
         }
 
-=======
+
         HandleDarkZoneEffects();
         CheckContinuousDamage();
         CheckImmediateDeath();
@@ -122,7 +122,7 @@ public class DarkZoneController : MonoBehaviour
     #region Sistema de Daño y Muerte
     private void CheckContinuousDamage()
     {
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
         if (Time.time >= nextDamageTime)
         {
             ApplyDamage();
@@ -130,7 +130,7 @@ public class DarkZoneController : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
+
     private void ActivateDarkZoneEffects()
     {
         isPlayerInDarkness = true;
@@ -141,7 +141,7 @@ public class DarkZoneController : MonoBehaviour
     {
         isPlayerInDarkness = false;
         if (warningUI != null) warningUI.SetActive(false);
-=======
+
     private void CheckImmediateDeath()
     {
         if (playerHealth == null) return;
@@ -152,18 +152,18 @@ public class DarkZoneController : MonoBehaviour
             //playerHealth.ForceDeath();
             nextDeathCheckTime = Time.time + deathCheckInterval;
         }
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     }
 
     private void ApplyDamage()
     {
-<<<<<<< HEAD
+
         if (playerHealth != null)
         { 
             playerHealth.TakeDamage(darknessDamage);
         }
     }
-=======
+
         if (playerHealth == null) return;
     
         playerHealth.TakeDamage(darknessDamage);
@@ -208,5 +208,5 @@ public class DarkZoneController : MonoBehaviour
             Debug.LogWarning("Asignar UI de advertencia!", this);
     }
     #endregion
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
 }

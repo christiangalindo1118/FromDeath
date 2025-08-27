@@ -6,7 +6,7 @@ public class LevelExit : MonoBehaviour
     [SerializeField] private string nextLevel = "Level2";
     [SerializeField] private float transitionDelay = 1f;
 
-<<<<<<< HEAD
+
     // Variable para cachear la espera y optimizar el rendimiento.
     private WaitForSeconds cachedWait;
 
@@ -21,17 +21,17 @@ public class LevelExit : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         // Usamos la corutina para manejar la transición.
-=======
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
         StartCoroutine(LoadNextLevel());
     }
 
     private IEnumerator LoadNextLevel()
     {
-<<<<<<< HEAD
+
         // Usamos la variable cacheada en lugar de crear una nueva instancia.
         yield return cachedWait;
 
@@ -45,17 +45,17 @@ public class LevelExit : MonoBehaviour
         {
             Debug.LogError("GameManager no encontrado en la escena. No se puede cambiar de nivel.");
         }
-=======
+
         yield return new WaitForSeconds(transitionDelay);
         if (GameManager.Instance != null)
             GameManager.Instance.LoadSceneWithFade(nextLevel);
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     }
 
     #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-<<<<<<< HEAD
+
         Gizmos.color = new Color(0.5f, 0f, 1f, 0.5f); // Un color magenta más visible
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
@@ -65,7 +65,7 @@ public class LevelExit : MonoBehaviour
     }
     #endif
 }
-=======
+
         Gizmos.color = Color.magenta;
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
@@ -73,4 +73,4 @@ public class LevelExit : MonoBehaviour
     }
     #endif
 }
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
