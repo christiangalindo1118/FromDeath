@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Checkpoint
-  - Enemy
-  - FadeAnimator
-  - PauseMenu
-  - GameOver
-  - OptionsMenu
-  - MainMenu
-  - GameOverScreen
-  - MainMenuPanel
-  - GameOverPanel
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,13 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Enemy
-<<<<<<< HEAD
-  - Player
-=======
   - 
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+  - 
+  - 
   - 
   - 
   - 
