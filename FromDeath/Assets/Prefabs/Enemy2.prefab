@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 3884551402868018417}
   - component: {fileID: 6879614971816615915}
   - component: {fileID: 727636698727237134}
+<<<<<<< HEAD
   - component: {fileID: 7924662160685105462}
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
   m_Layer: 7
   m_Name: Enemy2
   m_TagString: Enemy
@@ -166,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b425d58d6be1e47a30b753c829bb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   moveSpeed: 5
   detectionRange: 5
   contactDamage: 1
@@ -191,3 +195,11 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
+=======
+  maxHealth: 2
+  contactDamage: 1
+  attackCooldown: 1
+  moveSpeed: 5
+  detectionRange: 4
+  showDetectionGizmo: 1
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9

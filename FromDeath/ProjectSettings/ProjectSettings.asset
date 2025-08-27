@@ -385,10 +385,14 @@ PlayerSettings:
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
+<<<<<<< HEAD
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: WindowsStandaloneSupport
     m_APIs: 0200000012000000
     m_Automatic: 0
+=======
+  m_BuildTargetGraphicsAPIs: []
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -401,7 +405,10 @@ PlayerSettings:
     iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality: []
+<<<<<<< HEAD
   m_BuildTargetGroupHDRCubemapEncodingQuality: []
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
@@ -665,12 +672,19 @@ PlayerSettings:
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
+<<<<<<< HEAD
+=======
+  webGLEnableWebGPU: 0
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
   webGLPowerPreference: 2
   webGLWebAssemblyTable: 0
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
+<<<<<<< HEAD
   webEnableSubmoduleStrippingCompatibility: 0
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -797,4 +811,7 @@ PlayerSettings:
   insecureHttpOption: 0
   androidVulkanDenyFilterList: []
   androidVulkanAllowFilterList: []
+<<<<<<< HEAD
   androidVulkanDeviceFilterListAsset: {fileID: 0}
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9

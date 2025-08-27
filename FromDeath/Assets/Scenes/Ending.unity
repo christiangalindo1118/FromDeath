@@ -519,6 +519,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+<<<<<<< HEAD
 --- !u!1 &1918373550
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +570,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
 --- !u!224 &2060613240 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1966803585760788795, guid: f0c1afa10cbffbd479f8c6d166411837, type: 3}
@@ -593,18 +596,30 @@ PrefabInstance:
     - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 1918373551}
+=======
+      objectReference: {fileID: 2328095698163507612, guid: f833ed0603320b441b58389cb56d7a20, type: 3}
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
     - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+<<<<<<< HEAD
       value: OnMenuButtonPressed
       objectReference: {fileID: 0}
     - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UIManager, Assembly-CSharp
+=======
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
       objectReference: {fileID: 0}
     - target: {fileID: 786840427820701534, guid: 438da6a3af21e6246afbe0595f82f22c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -803,4 +818,7 @@ SceneRoots:
   - {fileID: 1199004648}
   - {fileID: 1181847823}
   - {fileID: 796474203}
+<<<<<<< HEAD
   - {fileID: 1918373552}
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9

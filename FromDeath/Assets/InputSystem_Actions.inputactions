@@ -988,6 +988,7 @@
                     "action": "TrackedDeviceOrientation",
                     "isComposite": false,
                     "isPartOfComposite": false
+<<<<<<< HEAD
                 },
                 {
                     "name": "",
@@ -1010,6 +1011,8 @@
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
+=======
+>>>>>>> db545ec4c4c600415723bcd605423adf833938d9
                 }
             ]
         }
