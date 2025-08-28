@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-<<<<<<< HEAD
+
     [Header("Configuración Básica")]
     [SerializeField] private Transform target;
     [SerializeField] private float smoothTime = 0.3f; // Tiempo que tarda la cámara en alcanzar al objetivo. Un valor más bajo es más rápido.
@@ -29,7 +29,7 @@ public class FollowCamera : MonoBehaviour
         {
             Debug.LogError("¡No se ha asignado un objetivo para la cámara!", this);
         }
-=======
+
     #region Inspector Variables
     [Header("Configuración Básica")]
     [SerializeField] private Transform target;         // Objetivo a seguir (jugador)
@@ -61,14 +61,14 @@ public class FollowCamera : MonoBehaviour
 
         // Calcular offset inicial basado en posición relativa
         initialOffset = transform.position - target.position;
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     }
 
     void LateUpdate()
     {
         if (target == null) return;
 
-<<<<<<< HEAD
+
         Vector3 targetPosition = transform.position;
         if (followX) targetPosition.x = target.position.x + offset.x;
         if (followY) targetPosition.y = target.position.y + offset.y;
@@ -89,7 +89,7 @@ public class FollowCamera : MonoBehaviour
         offset = transform.position - target.position;
     }
 
-=======
+
         // Calcular nueva posición basada en opciones de seguimiento
         targetPosition = transform.position;
 
@@ -132,16 +132,16 @@ public class FollowCamera : MonoBehaviour
     }
 
     // Método para actualizar límites dinámicamente
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
     public void SetCameraBounds(Vector2 newMin, Vector2 newMax)
     {
         minPosition = newMin;
         maxPosition = newMax;
         useBounds = true;
     }
-<<<<<<< HEAD
+
 }
-=======
+
     #endregion
-}
->>>>>>> db545ec4c4c600415723bcd605423adf833938d9
+
+
